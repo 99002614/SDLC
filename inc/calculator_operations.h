@@ -87,4 +87,29 @@ int smaller(int operand1, int operand2);
 */
 int square(int operand1);
 
+
+/**
+*  provides AND of operand1, operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of the the AND operation
+*/
+int and(int operand1, int operand2);
+
+
+/**
+*  provides OR of operand1, operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of the the OR operation
+*/
+int or(int operand1, int operand2);
+
+
+/**
+*  provides NOT of operand1 and returns the result
+* @param[in] operand1 
+* @return Result of the the NOT operation
+*/
+int not(int operand1);
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
