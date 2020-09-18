@@ -20,6 +20,7 @@ void test_or(void);
 void test_not(void);
 void test_nand(void);
 void test_nor(void);
+void test_factorial(void);
 
 /* Start of the application test */
 int main() {
@@ -46,6 +47,7 @@ int main() {
   CU_add_test(suite, "not", test_not);
   CU_add_test(suite, "and", test_nand);
   CU_add_test(suite, "or", test_nor);
+  CU_add_test(suite, "factorial", test_factorial);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -147,4 +149,10 @@ void test_nor(void) {
   
   /* Dummy fail*/
   CU_ASSERT(1 == or(1,1));
+}
+void test_factorial(void) {
+  CU_ASSERT(12 == factorial(4));
+  
+  /* Dummy fail*/
+  CU_ASSERT(5 == factorial(2));
 }
