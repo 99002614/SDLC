@@ -60,5 +60,19 @@ int muodulus(int operand1, int operand2);
 * @return Result of operand1 
 */
 int primenumber(int operand1);
+/**
+*  Decides greater from operand1, operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of the greater operand
+*/
+int greater(int operand1, int operand2);
+/**
+*  Decides smaller from operand1, operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of the smaller operand
+*/
+int smaller(int operand1, int operand2);
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
