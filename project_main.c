@@ -12,7 +12,7 @@ int calculator_operand1 = 0;
 int calculator_operand2 = 0;
 
 /* Valid operations */
-enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULUS, PRIMENUMBER,GREATER,SMALLER,SQUARE,AND,OR,NOT, EXIT };
+enum operations{ ADD=1, SUBTRACT, MULTIPLY, DIVIDE, MODULUS, PRIMENUMBER,GREATER,SMALLER,SQUARE,AND,OR,NOT,NAND,NOR, EXIT };
 
 /* Display the menu of operations supported */
 void calculator_menu(void);
@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 void calculator_menu(void)
 {
     printf("\nAvailable Operations\n");
-    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Modulus\n6. Primenumber\n7. Greater\n8. Smaller\n9. Square\n10. AND\n11. OR\n12. NOT\n13. Exit");
+    printf("\n1. Add\n2. Subtract\n3. Multiply\n4. Divide\n5. Modulus\n6. Primenumber\n7. Greater\n8. Smaller\n9. Square\n10. AND\n11. OR\n12. NOT\n13. NAND\n14. NOR\n15. Exit");
     printf("\n\tEnter your choice\n");
    
      __fpurge(stdin);
@@ -167,7 +167,25 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case 13:
+        case NAND:
+            printf("\n\t%d && %d = %d\nEnter to continue", 
+            calculator_operand1, 
+            calculator_operand2,
+            nand(calculator_operand1, calculator_operand2));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case NOR:
+            printf("\n\t%d || %d = %d\nEnter to continue", 
+            calculator_operand1, 
+            calculator_operand2,
+            nor(calculator_operand1, calculator_operand2));
+            
+            __fpurge(stdin);
+            getchar();
+            break;
+        case 15:
             exit(0);
             break;
         default:
