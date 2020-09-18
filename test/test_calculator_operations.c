@@ -159,7 +159,7 @@ void test_factorial(void) {
   CU_ASSERT(5 == factorial(2));
 }
 void test_adder3bit(void) {
-  CU_ASSERT(0 == andder3bit(1,1,0));
+  CU_ASSERT(0 == adder3bit(1,1,0));
   
   /* Dummy fail*/
   CU_ASSERT(1 == adder3bit(1,0,0));
