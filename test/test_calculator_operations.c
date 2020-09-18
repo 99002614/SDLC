@@ -22,6 +22,8 @@ void test_nand(void);
 void test_nor(void);
 void test_factorial(void);
 void test_adder3bit(void);
+void test_subtractor3bit(void);
+
 
 /* Start of the application test */
 int main() {
@@ -50,6 +52,7 @@ int main() {
   CU_add_test(suite, "or", test_nor);
   CU_add_test(suite, "factorial", test_factorial);
   CU_add_test(suite, "adder3bit", test_adder3bit);
+  CU_add_test(suite, "subtractor3bit", test_subtractor3bit);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -159,6 +162,12 @@ void test_factorial(void) {
   CU_ASSERT(5 == factorial(2));
 }
 void test_adder3bit(void) {
+  CU_ASSERT(0 == adder3bit(1,1,0));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == adder3bit(1,0,0));
+}
+void test_subtractor3bit(void) {
   CU_ASSERT(0 == adder3bit(1,1,0));
   
   /* Dummy fail*/
