@@ -79,3 +79,35 @@ int square(int operand1)
     result= operand1 * operand1;
     return result;
 }
+int and(int operand1, int operand2)
+{
+    int result;
+    if(operand1<0 && operand2<0)
+    return -1;
+    else if(operand1>0 && operand2>0)
+    return 1;
+    else if(operand1==0 || operand2==0)
+    return 0;
+    else
+    return 1;
+}
+int or(int operand1, int operand2)
+{
+    int result;
+    if(operand1<0 && operand2<0)
+    return -1;
+    else if(operand1>0 && operand2>0)
+    return 1;
+    else if(operand1==1 || operand2==1)
+    return 1;
+    else
+    return 0;
+}
+int not(int operand1)
+{
+    if(operand1==0)
+        return 1;
+    else
+        return 0;
+}
+
