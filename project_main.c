@@ -204,7 +204,7 @@ void calculator_menu(void)
             __fpurge(stdin);
             getchar();
             break;
-        case 16:
+        case 17:
             exit(0);
             break;
         default:
