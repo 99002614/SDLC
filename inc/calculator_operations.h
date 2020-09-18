@@ -44,4 +44,21 @@ int multiply(int operand1, int operand2);
 */
 int divide(int operand1, int operand2);
 
+
+/**
+*  perform modulus of operand1 and operand2 and returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @return Result of operand1 % operand2
+*/
+int muodulus(int operand1, int operand2);
+
+
+/**
+*  determine prime number of operand1 and returns the result
+* @param[in] operand1 
+* @return Result of operand1 
+*/
+int primenumber(int operand1);
+
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
