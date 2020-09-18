@@ -14,6 +14,7 @@ void test_modulus(void);
 void test_primenumber(void);
 void test_greater(void);
 void test_smaller(void);
+void test_square(void);
 
 /* Start of the application test */
 int main() {
@@ -34,6 +35,7 @@ int main() {
   CU_add_test(suite, "primenumber", test_primenumber);
   CU_add_test(suite, "greater", test_greater);
   CU_add_test(suite, "smaller", test_smaller);
+  CU_add_test(suite, "square", test_square);
 
 
 /* Note: Do not edit START*/
@@ -100,4 +102,10 @@ void test_smaller(void) {
   
   /* Dummy fail*/
   CU_ASSERT(4 == divide(4, 2));
+}
+void test_primenumber(void) {
+  CU_ASSERT(49 == square(7));
+  
+  /* Dummy fail*/
+  CU_ASSERT(5 == primenumber(2));
 }
