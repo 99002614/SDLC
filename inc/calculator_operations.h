@@ -130,4 +130,13 @@ int nand(int operand1, int operand2);
 * @return Result of the the NOR operation
 */
 int nor(int operand1, int operand2);
+
+
+/**
+*  Perform factorial of operand1 and returns the result
+* @param[in] operand1 
+* @return Result will be factorial of operand1
+*/
+int factorial(int operand1);
+
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
