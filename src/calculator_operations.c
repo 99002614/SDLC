@@ -49,3 +49,17 @@ int primenumber(int operand1)
             return 0;
         }
     }
+int greater(int operand1, int operand2)
+{
+    if(operand1 > operand2)
+        return operand1;
+    else
+        return operand2;
+}
+int smaller(int operand1, int operand2)
+{
+    if(operand1 < operand2)
+        return operand1;
+    else
+        return operand2;
+}
