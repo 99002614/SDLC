@@ -73,3 +73,9 @@ int smaller(int operand1, int operand2)
     else
         return operand2;
 }
+int square(int operand1)
+{
+    int result;
+    result= operand1 * operand1;
+    return result;
+}
