@@ -1,30 +1,40 @@
 #include <calculator_operations.h>
 
 int add(int operand1, int operand2)
-{
-    return operand1 + operand2;
+{   
+    int result;
+    result= operand1 + operand2;
+    return result;
 }
 
 int subtract(int operand1, int operand2)
 {
-    return operand1 - operand2;
+    int result;
+    result= operand1 - operand2;
+    return result;
 }
 
 int multiply(int operand1, int operand2)
 {
-    return operand1 * operand2;
+    int result;
+    result= operand1 * operand2;
+    return result;
 }
 
 int divide(int operand1, int operand2)
 {
+    int result;
     if(0 == operand2)
         return 0;
     else
-        return operand1 / operand2;
+        result= operand1 / operand2;
+    return result;
 }
 int modulus(int operand1, int operand2)
 {
+    int result;
     return operand1 % operand2;
+    return result;
 }
 int primenumber(int operand1)
     {
