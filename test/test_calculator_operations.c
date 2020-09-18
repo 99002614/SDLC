@@ -18,6 +18,8 @@ void test_square(void);
 void test_and(void);
 void test_or(void);
 void test_not(void);
+void test_nand(void);
+void test_nor(void);
 
 /* Start of the application test */
 int main() {
@@ -42,7 +44,8 @@ int main() {
   CU_add_test(suite, "and", test_and);
   CU_add_test(suite, "or", test_or);
   CU_add_test(suite, "not", test_not);
-
+  CU_add_test(suite, "and", test_nand);
+  CU_add_test(suite, "or", test_nor);
 
 /* Note: Do not edit START*/
   /* Setup Test Framework to output the result to Screen */
@@ -132,4 +135,16 @@ void test_not(void) {
   
   /* Dummy fail*/
   CU_ASSERT(0 == not(0));
+}
+void test_nand(void) {
+  CU_ASSERT(0 == and(1,1));
+  
+  /* Dummy fail*/
+  CU_ASSERT(0 == and(1,0));
+}
+void test_nor(void) {
+  CU_ASSERT(0 == or(1,0));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == or(1,1));
 }
