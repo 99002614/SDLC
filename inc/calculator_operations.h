@@ -148,4 +148,14 @@ int factorial(int operand1);
 * @return Result of the the adder operation
 */
 int adder3bit(int operand1, int operand2, int operand3);
+
+
+/**
+*  Perform adder for operand1, operand2 and operand3  returns the result
+* @param[in] operand1 
+* @param[in] operand2 
+* @param[in] operand3 
+* @return Result of the the adder operation
+*/
+int subtractor3bit(int operand1, int operand2, int operand3);
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
