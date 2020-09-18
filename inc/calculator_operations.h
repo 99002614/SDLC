@@ -85,6 +85,6 @@ int smaller(int operand1, int operand2);
 * @param[in] operand1 
 * @return Result of the operand1 which is squared
 */
-int square(int operand1, int operand2);
+int square(int operand1);
 
 #endif  /* #define __CALCULATOR_OPERATIONS_H__ */
