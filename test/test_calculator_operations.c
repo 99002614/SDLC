@@ -15,6 +15,9 @@ void test_primenumber(void);
 void test_greater(void);
 void test_smaller(void);
 void test_square(void);
+void test_and(void);
+void test_or(void);
+void test_not(void);
 
 /* Start of the application test */
 int main() {
@@ -36,6 +39,9 @@ int main() {
   CU_add_test(suite, "greater", test_greater);
   CU_add_test(suite, "smaller", test_smaller);
   CU_add_test(suite, "square", test_square);
+  CU_add_test(suite, "and", test_and);
+  CU_add_test(suite, "or", test_or);
+  CU_add_test(suite, "not", test_not);
 
 
 /* Note: Do not edit START*/
@@ -107,5 +113,23 @@ void test_square(void) {
   CU_ASSERT(49 == square(7));
   
   /* Dummy fail*/
-  CU_ASSERT(5 == primenumber(2));
+  CU_ASSERT(5 == square(2));
+}
+void test_and(void) {
+  CU_ASSERT(1 == and(1,1));
+  
+  /* Dummy fail*/
+  CU_ASSERT(1 == and(1,0));
+}
+void test_or(void) {
+  CU_ASSERT(1 == or(1,0));
+  
+  /* Dummy fail*/
+  CU_ASSERT(0 == or(1,1));
+}
+void test_not(void) {
+  CU_ASSERT(1 == not(0));
+  
+  /* Dummy fail*/
+  CU_ASSERT(0 == not(0));
 }
