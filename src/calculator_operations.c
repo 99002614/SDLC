@@ -134,20 +134,21 @@ int nor(int operand1, int operand2)
     return 0;
 }
 int factorial(int operand1)
-    {
+    {   
+        int fact=1;
         if (operand1==0)
         {
             return 1;
         }
-        if (num1 < 0)
+        if (operand1 < 0)
         {
             return 0;
         }
         else
         {
-            for (i = 1; i <= operand1; ++i)
+            for (int i = 1; i <= operand1; ++i)
             {
-                int fact *= i;
+                fact *= i;
             }
         return fact;
         }
