@@ -103,7 +103,7 @@ void test_smaller(void) {
   /* Dummy fail*/
   CU_ASSERT(4 == divide(4, 2));
 }
-void test_primenumber(void) {
+void test_square(void) {
   CU_ASSERT(49 == square(7));
   
   /* Dummy fail*/
