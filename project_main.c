@@ -62,7 +62,7 @@ void calculator_menu(void)
     }
     switch(calculator_operation)
     {
-        case :
+        case ADD:
             printf("\n\t%d + %d = %d\nEnter to continue", 
             calculator_operand1, 
             calculator_operand2,
