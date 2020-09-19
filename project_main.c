@@ -90,7 +90,7 @@ void calculator_menu(void)
             getchar();
             break;
         case DIVIDE:
-            prinf("\n\t%d / %d = %d\nEnter to continue", 
+            printf("\n\t%d / %d = %d\nEnter to continue", 
             calculator_operand1, 
             calculator_operand2,
             divide(calculator_operand1, calculator_operand2));
